@@ -48,6 +48,7 @@ export default class FullList implements List {
 
   clearList(): void {
     this._list = []
+    this.save()
   }
 
   addItem(itemObj: ListItem): void {
